@@ -9,29 +9,28 @@ const Footer = () => {
       <div className={styles.upper}>
         <div className={styles.icons}>
           <Link href="/" className={styles.icon}>
-            <Image src="/facebook.png" height={64} width={64} alt="facebook" />
+            <Image src="/facebook.png" height={32} width={32} alt="facebook" />
           </Link>
           <Link href="/" className={styles.icon}>
             <Image
               src="/instagram.png"
-              height={64}
-              width={64}
+              height={32}
+              width={32}
               alt="instagram"
             />
           </Link>
           <Link href="/" className={styles.icon}>
-            <Image src="/linkedin.png" height={64} width={64} alt="linkedin" />
+            <Image src="/linkedin.png" height={32} width={32} alt="linkedin" />
           </Link>
           <Link href="/" className={styles.icon}>
-            <Image src="/twitter.png" height={64} width={64} alt="twitter" />
+            <Image src="/twitter.png" height={32} width={32} alt="twitter" />
           </Link>
         </div>
         <div className={styles.firstline}>Join the EDC Community</div>
         <div className={styles.secondline}>
-          Join our 1,000,000+ person community and contribute to a more private
-          and decentralized internet.
+        Join our community of over 1,000 members and help shape a better startup culture!
         </div>
-        <button className={styles.thirdline}>Join the Discord</button>
+        {/* <button className={styles.thirdline}>Join the Discord</button> */}
       </div>
 
       <div className={styles.lower}>

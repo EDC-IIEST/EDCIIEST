@@ -18,7 +18,7 @@ const Ourteam = () => {
 
       <div className={styles.cardholder}>
         {/* Conditionally show limited or all team members */}
-        {data.slice(0, showAll ? data.length : 4).map((item, index) => (
+        {data.slice(0, showAll ? data.length : 3).map((item, index) => (
           <div className={styles.card} key={index}>
             <Biocard
               id={item.id}
