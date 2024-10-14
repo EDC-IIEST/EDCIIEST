@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <div>
       <header
-        className="w-full  fixed top-0 left-0 z-10 flex justify-between align-middle m-30"
+        className="w-full  fixed top-0 left-0 z-10 flex justify-between gap-20vw align-middle m-30"
         style={{
           background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
         }}
@@ -57,37 +57,37 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-            navbar ? "p-12 md:p-0 block" : "hidden"
+          className={`flex-1 justify-end items-center space-x-6 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            navbar ? "p-12 md:p-0 block justify-begin" : "hidden"
           }`}
         >
-          <nav className="h-screen md:h-auto items-center justify-center md:flex   ">
-            <div className="pb-6 text-xl  py-2 md:px-6 text-center   hover:text-black text-black  md:hover:text-black ">
+          <nav className="h-screen md:h-auto items-center justify-begin flex md:flex-row flex-col">
+            <div className="text-xl py-2 md:px-6 text-center hover:text-black text-black md:hover:text-black">
               <Link href="/" onClick={() => setNavbar(!navbar)}>
                 Home
               </Link>
             </div>
-            <div className="pb-6 text-xl  py-2 md:px-6 text-center   hover:text-black text-black md:hover:text-black ">
+            <div className="text-xl py-2 md:px-6 text-center hover:text-black text-black md:hover:text-black">
               <Link href="#aboutus" onClick={() => setNavbar(!navbar)}>
                 About
               </Link>
             </div>
-            <div className="pb-6 text-xl  py-2 md:px-6 text-center   hover:text-black text-black md:hover:text-black ">
+            <div className="text-xl py-2 md:px-6 text-center hover:text-black text-black md:hover:text-black">
               <Link href="#gallery" onClick={() => setNavbar(!navbar)}>
                 Gallery
               </Link>
             </div>
-            <div className="pb-6 text-xl  py-2 md:px-6 text-center   hover:text-black text-black md:hover:text-black ">
+            <div className="text-xl py-2 md:px-6 text-center hover:text-black text-black md:hover:text-black">
               <Link href="#ourteam" onClick={() => setNavbar(!navbar)}>
                 Team
               </Link>
             </div>
-            <div className="pb-6 text-xl  py-2 md:px-6 text-center   hover:text-black text-black md:hover:text-black ">
+            <div className="text-xl py-2 md:px-6 text-center hover:text-black text-black md:hover:text-black">
               <Link href="#initiative" onClick={() => setNavbar(!navbar)}>
                 Initiative
               </Link>
             </div>
-            <div className="pb-6 text-xl  py-2 md:px-6 text-center   hover:text-black text-black md:hover:text-black ">
+            <div className="text-xl py-2 md:px-6 text-center hover:text-black text-black md:hover:text-black">
               <Link href="#contactus" onClick={() => setNavbar(!navbar)}>
                 Contact us
               </Link>
